@@ -1,0 +1,21 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: mueblesstgopep1
+  jpa:
+    show-sql: true
+    hibernate:
+      dialect: MySQL8Dialect
+      ddl-auto: create
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    dbname: tingesodb
+    url: jdbc:mysql://localhost:3306/tingesodb
+    username: root
+    password: admin
+    #url: ${DB_URL}
+    #dbname: ${DB_NAME}
+    #username: ${DB_USERNAME}
+    #password: ${DB_PASSWORD}
